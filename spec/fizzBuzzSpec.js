@@ -16,4 +16,14 @@ describe("FizzBuzz", function() {
       expect(fizzBuzz.play(6)).toBe("fizz");
     });
   });
+
+  describe("multiples of 5", function() {
+    it("returns buzz when 5", function() {
+      expect(fizzBuzz.play(5)).toBe("buzz");
+    });
+
+    it("returns buzz when 10", function() {
+      expect(fizzBuzz.play(10)).toBe("buzz");
+    });
+  });
 });
