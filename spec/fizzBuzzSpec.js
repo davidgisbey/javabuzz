@@ -26,4 +26,20 @@ describe("FizzBuzz", function() {
       expect(fizzBuzz.play(10)).toBe("buzz");
     });
   });
+
+  describe("multiples of 15", function() {
+    it("returns fizzbuzz when 15", function() {
+      expect(fizzBuzz.play(15)).toBe("fizzbuzz");
+    });
+
+    it("returns fizzbuzz when 30", function() {
+      expect(fizzBuzz.play(30)).toBe("fizzbuzz");
+    });
+  });
+
+  describe ("normal integers return themselves", function() {
+    it("returns 7 when 7", function() {
+      expect(fizzBuzz.play(7)).toBe(7);
+    });
+  });
 });
